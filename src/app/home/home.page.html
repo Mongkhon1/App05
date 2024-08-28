@@ -1,18 +1,27 @@
-<ion-content>
+<ion-header [translucent]="true">
+  <ion-toolbar color="p">
+    <ion-buttons slot="start">
+      <ion-back-button color="light" default-href="#"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="light">Product</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="d">
   <ion-grid>
     <ion-col size="12" size-md="6" size-lg="4" *ngFor="let item of items">
-      <ion-card>
+      <ion-card class="menu" (click)="gotoDetail(item)">
         <img [src]="item.imageURL" alt="">
         <ion-card-header>
-          <ion-card-title>
-            {{ item.name }}
+          <ion-card-title class="menu" color="light">
+            <h1>{{ item.name }}</h1>
           </ion-card-title>
         </ion-card-header>
         <ion-card-content>
-          <ion-list>
+          <ion-list class="menu" color="light">
             {{ item.detail }}
           </ion-list>
-          <ion-list>
+          <ion-list class="menu">
             {{ item.price }} บาท
           </ion-list>
         </ion-card-content>

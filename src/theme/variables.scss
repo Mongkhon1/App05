@@ -1,2 +1,37 @@
 // For information on how to create your own theme, please see:
 // http://ionicframework.com/docs/theming/
+:root {
+	--ion-color-p: #b03de6;
+	--ion-color-p-rgb: 176,61,230;
+	--ion-color-p-contrast: #000000;
+	--ion-color-p-contrast-rgb: 0,0,0;
+	--ion-color-p-shade: #9b36ca;
+	--ion-color-p-tint: #b850e9;
+}
+
+.ion-color-p {
+	--ion-color-base: var(--ion-color-p);
+	--ion-color-base-rgb: var(--ion-color-p-rgb);
+	--ion-color-contrast: var(--ion-color-p-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-p-contrast-rgb);
+	--ion-color-shade: var(--ion-color-p-shade);
+	--ion-color-tint: var(--ion-color-p-tint);
+}
+
+:root {
+	--ion-color-d: #bfbfbf;
+	--ion-color-d-rgb: 191,191,191;
+	--ion-color-d-contrast: #000000;
+	--ion-color-d-contrast-rgb: 0,0,0;
+	--ion-color-d-shade: #a8a8a8;
+	--ion-color-d-tint: #c5c5c5;
+}
+
+.ion-color-d {
+	--ion-color-base: var(--ion-color-d);
+	--ion-color-base-rgb: var(--ion-color-d-rgb);
+	--ion-color-contrast: var(--ion-color-d-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-d-contrast-rgb);
+	--ion-color-shade: var(--ion-color-d-shade);
+	--ion-color-tint: var(--ion-color-d-tint);
+}
